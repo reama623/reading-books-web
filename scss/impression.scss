@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.container .container_section:nth-child(n + 1):nth-child(-n + 2) {
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.container .container_section:nth-child(3) {
+  grid-column: 1 / 3;
+}
+
+.container .container_section {
+  padding: 10px;
+}
+
+.container .container_section.metting_attendants {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-content: space-between;
+  // justify-content: space-around;
+}
+
+.container .container_section.metting_attendants .attendant {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin: 5px 10px;
+}
+
+.container .container_section.user_item .user_book_info dl dt,
+dd {
+  display: inline-block;
+  padding: 3px 10px;
+  margin-right: 10px;
+  border-radius: 14px;
+}
+
+.container .container_section.user_item .user_book_info dl dt {
+  background-color: antiquewhite;
+  border: 1px solid #eee;
+}
+
+.container .container_section.user_item .user_feeling .feeling_info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.container
+  .container_section.user_item
+  .user_feeling
+  .feeling_info
+  .feeling_type
+  .type_shell {
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 3px 10px;
+  background-color: antiquewhite;
+}
+
+.container
+  .container_section.user_item
+  .user_feeling
+  .feeling_info
+  .feeling_title
+  .title_shell {
+  display: inline-block;
+  font-weight: 500;
+  margin: 0px 20px;
+  border-radius: 10px;
+  padding: 3px 10px;
+  background-color: antiquewhite;
+}
