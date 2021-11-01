@@ -10,7 +10,8 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
+    "baseUrl": "src"
   },
   "include": ["src"]
 }

@@ -14,6 +14,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
+    alias: {
+      src: path.resolve(__dirname, "./src"),
+    },
   },
   devtool: "source-map",
   module: {
@@ -35,6 +38,15 @@ module.exports = {
       {
         test: /\.(s[ac]ss|css)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        loader: require.resolve("url-loader"),
+        options: { limit: 8000, name: "images/[hash]-[name].[ext]" },
+      },
+      {
+        test: /\.svg$/,
+        loader: "file-loader",
       },
     ],
   },
