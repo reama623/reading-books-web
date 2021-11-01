@@ -66,9 +66,7 @@ export default function TodayMeetingPresenter() {
               </div>
             </div>
             <div className="user_book">
-              <div className="book_img">
-                <img src="" alt="" srcset="" />
-              </div>
+              <div className="book_img"></div>
               <div className="book_info">
                 <div className="book_title">제목</div>
                 <div className="book_author">저자</div>
