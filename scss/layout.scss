@@ -7,6 +7,7 @@ a {
   .header {
     z-index: 9999;
     position: fixed;
+    background-color: white;
     top: 0;
     left: 0;
     right: 0;
@@ -37,6 +38,12 @@ a {
         .header_menu {
           margin: 0 10px;
           display: inline-block;
+          a {
+            color: rgb(82, 82, 82);
+          }
+          a:hover {
+            color: black;
+          }
         }
       }
       .header_tool_area {
