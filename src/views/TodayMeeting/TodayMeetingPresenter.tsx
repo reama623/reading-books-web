@@ -103,13 +103,13 @@ export default function TodayMeetingPresenter() {
             <div className="user_book">
               <div className="book_img">
                 <img
-                  src="https://bookthumb-phinf.pstatic.net/cover/173/562/17356230.jpg?type=m1&udate=20210120"
-                  alt="나도 아직 나를 모른다 책 이미지"
+                  src="https://bookthumb-phinf.pstatic.net/cover/147/897/14789727.jpg?type=m1&udate=20210915"
+                  alt="시작의 기술 책 이미지"
                 />
               </div>
               <div className="book_info">
-                <div className="book_title">나도 아직 나를 모른다</div>
-                <div className="book_author">허지원</div>
+                <div className="book_title">시작의 기술</div>
+                <div className="book_author">개리 비숍</div>
                 <div className="book_reader">강유진</div>
               </div>
             </div>
