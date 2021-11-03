@@ -95,8 +95,8 @@ export default function TodayMeetingPresenter() {
                 />
               </div>
               <div className="book_info">
-                <div className="book_title">잡 노마드 사회</div>
-                <div className="book_author">저자</div>
+                <div className="book_title">인간실격</div>
+                <div className="book_author">다자이 오사무</div>
                 <div className="book_reader">김다솜</div>
               </div>
             </div>
