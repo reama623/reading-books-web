@@ -29,6 +29,14 @@ export default function TodayMeetingPresenter() {
                 우리의 도서관
               </a>
             </div>
+            <div className="header_menu">
+              <a
+                href="https://massive-touch-df4.notion.site/Season1-38551245660f43cdbb1520da6c15f835"
+                target="_blank"
+              >
+                Season1 안내
+              </a>
+            </div>
           </div>
           {/* <div className="header_tool_area">
             <button className="header_button_menu">hi</button>
