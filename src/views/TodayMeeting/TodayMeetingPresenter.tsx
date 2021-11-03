@@ -8,22 +8,31 @@ export default function TodayMeetingPresenter() {
       <header className={classNames("header")}>
         <div className="header_gnb">
           <h1 className="header_title">
-            <a href="#" className="header_title_logo">
-              i
-            </a>
+            {/* <a href="#" className="header_title_logo">
+              
+            </a> */}
             <a href="#" className="header_title_name">
-              <span className="blind">모임</span>
+              <span className="blind">독서 모임</span>
             </a>
           </h1>
           <div className="header_menus">
-            <div className="header_menu">오늘의 모임</div>
-            <div className="header_menu">공지사항</div>
-            <div className="header_menu">우리의 도서관</div>
+            <div className="header_menu">
+              <a href="/">오늘의 모임</a>
+            </div>
+            <div className="header_menu">
+              <a href="#" onClick={() => alert("준비중이에요 !")}>
+                공지사항
+              </a>
+            </div>
+            <div className="header_menu">
+              <a href="#" onClick={() => alert("준비중이에요 !")}>
+                우리의 도서관
+              </a>
+            </div>
           </div>
-          <div className="header_tool_area">
-            {/* <img src={UserIcon} /> */}
+          {/* <div className="header_tool_area">
             <button className="header_button_menu">hi</button>
-          </div>
+          </div> */}
         </div>
       </header>
       <main id="content">
@@ -42,7 +51,7 @@ export default function TodayMeetingPresenter() {
               <div className="book_img">
                 <img
                   src="https://bookthumb-phinf.pstatic.net/cover/068/576/06857604.jpg?type=m1&udate=20200127"
-                  alt="사람풍경"
+                  alt="사람풍경 책 이미지"
                 />
               </div>
               <div className="book_info">
@@ -55,7 +64,7 @@ export default function TodayMeetingPresenter() {
               <div className="book_img">
                 <img
                   src="https://bookthumb-phinf.pstatic.net/cover/071/024/07102432.jpg?type=m1&udate=20201008"
-                  alt="데미안"
+                  alt="데미안 책 이미지"
                   className="s"
                 />
               </div>
@@ -66,35 +75,55 @@ export default function TodayMeetingPresenter() {
               </div>
             </div>
             <div className="user_book">
-              <div className="book_img"></div>
+              <div className="book_img">
+                <img
+                  src="https://bookthumb-phinf.pstatic.net/cover/207/385/20738594.jpg?type=m1&udate=20210715"
+                  alt="아주 보통의 행복 책 이미지"
+                />
+              </div>
               <div className="book_info">
-                <div className="book_title">제목</div>
-                <div className="book_author">저자</div>
-                <div className="book_reader">독자</div>
+                <div className="book_title">아주 보통의 행복</div>
+                <div className="book_author">최인철</div>
+                <div className="book_reader">이예진</div>
               </div>
             </div>
             <div className="user_book">
-              <div className="book_img"></div>
+              <div className="book_img">
+                <img
+                  src="https://bookthumb-phinf.pstatic.net/cover/114/326/11432676.jpg?type=m1&udate=20171111"
+                  alt="잡 노마드 사회 책 이미지"
+                />
+              </div>
               <div className="book_info">
-                <div className="book_title">제목</div>
+                <div className="book_title">잡 노마드 사회</div>
                 <div className="book_author">저자</div>
-                <div className="book_reader">독자</div>
+                <div className="book_reader">김다솜</div>
               </div>
             </div>
             <div className="user_book">
-              <div className="book_img"></div>
+              <div className="book_img">
+                <img
+                  src="https://bookthumb-phinf.pstatic.net/cover/173/562/17356230.jpg?type=m1&udate=20210120"
+                  alt="나도 아직 나를 모른다 책 이미지"
+                />
+              </div>
               <div className="book_info">
-                <div className="book_title">제목</div>
-                <div className="book_author">저자</div>
-                <div className="book_reader">독자</div>
+                <div className="book_title">나도 아직 나를 모른다</div>
+                <div className="book_author">허지원</div>
+                <div className="book_reader">강유진</div>
               </div>
             </div>
             <div className="user_book">
-              <div className="book_img"></div>
+              <div className="book_img">
+                <img
+                  src="https://bookthumb-phinf.pstatic.net/cover/000/794/00079463.jpg?type=m1&udate=20141107"
+                  alt="폴 크루그먼의 경제학의 향연 책 이미지"
+                />
+              </div>
               <div className="book_info">
-                <div className="book_title">제목</div>
-                <div className="book_author">저자</div>
-                <div className="book_reader">독자</div>
+                <div className="book_title">폴 크루그먼의 경제학의 향연</div>
+                <div className="book_author">폴 크루그먼</div>
+                <div className="book_reader">고권희</div>
               </div>
             </div>
           </div>
