@@ -98,7 +98,7 @@ export default function TodayMeetingPresenter() {
             <div className="user_book">
               <div className="book_img">
                 <img
-                  src="https://bookthumb-phinf.pstatic.net/cover/208/838/20883823.jpg?type=m1&udate=20210906"
+                  src="https://bookthumb-phinf.pstatic.net/cover/001/510/00151055.jpg?type=m1&udate=20130129"
                   alt="잡 노마드 사회 책 이미지"
                 />
               </div>
