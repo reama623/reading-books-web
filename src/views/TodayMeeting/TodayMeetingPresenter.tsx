@@ -121,19 +121,6 @@ export default function TodayMeetingPresenter() {
                 <div className="book_reader">강유진</div>
               </div>
             </div>
-            <div className="user_book">
-              <div className="book_img">
-                <img
-                  src="https://bookthumb-phinf.pstatic.net/cover/000/794/00079463.jpg?type=m1&udate=20141107"
-                  alt="폴 크루그먼의 경제학의 향연 책 이미지"
-                />
-              </div>
-              <div className="book_info">
-                <div className="book_title">폴 크루그먼의 경제학의 향연</div>
-                <div className="book_author">폴 크루그먼</div>
-                <div className="book_reader">고권희</div>
-              </div>
-            </div>
           </div>
         </section>
       </main>
