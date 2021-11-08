@@ -123,6 +123,19 @@ export default function TodayMeetingPresenter() {
                 <div className="book_reader">강유진</div>
               </div>
             </div>
+            <div className="user_book">
+              <div className="book_img">
+                <img
+                  src="https://bookthumb-phinf.pstatic.net/cover/001/108/00110830.jpg?type=m1&udate=20141121"
+                  alt="틱닛한의 평화로움 책 이미지"
+                />
+              </div>
+              <div className="book_info">
+                <div className="book_title">틱낫한의 평화로움</div>
+                <div className="book_author">틱낫한</div>
+                <div className="book_reader">김민강</div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
