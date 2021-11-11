@@ -73,14 +73,14 @@ export default function TodayMeetingPresenter() {
             <div className="user_book">
               <div className="book_img">
                 <img
-                  src="https://bookthumb-phinf.pstatic.net/cover/071/024/07102432.jpg?type=m1&udate=20201008"
-                  alt="데미안 책 이미지"
+                  src="https://bookthumb-phinf.pstatic.net/cover/137/463/13746314.jpg?type=m1&udate=20201019"
+                  alt="참을 수 없는 존재의 가벼움 책 이미지"
                   className="s"
                 />
               </div>
               <div className="book_info">
-                <div className="book_title">데미안</div>
-                <div className="book_author">헤르만 헤세</div>
+                <div className="book_title">참을 수 없는 존재의 가벼움</div>
+                <div className="book_author">밀란 쿤데라</div>
                 <div className="book_reader">김지영</div>
               </div>
             </div>
