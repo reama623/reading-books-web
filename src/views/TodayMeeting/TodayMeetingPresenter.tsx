@@ -45,12 +45,13 @@ export default function TodayMeetingPresenter() {
       </header>
       <main id="content">
         <section className="page_title_box">
-          <h2 className="week_title">11/10 모임</h2>
+          <h2 className="week_title">11/17 모임</h2>
           <div className="week_subtitle">
             {/* <p>오늘의 나를 있게 한 것은 우리 마을 도서관이었다.</p>
             <p>하버드 졸업장보다 소중한 것이 독서하는 습관이다. -빌 게이츠-</p> */}
             {/* <p>그저 생각하고, 생활을 위해 독서하라. -베이컨-</p> */}
-            <p>좋은 책은 좋은 친구와 같다. -생피에르-</p>
+            {/* <p>좋은 책은 좋은 친구와 같다. -생피에르-</p> */}
+            <p>독서는 사람이 음식을 먹는 것과 같다. -헤르만 헤세-</p>
           </div>
         </section>
         <section className="page_content">
