@@ -1,39 +1,31 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
-const mode = process.env.NODE_ENV || "development";
-const port = process.env.PORT || "3000";
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 module.exports = {
-  mode,
-  entry: { app: path.join(__dirname, "src", "index.tsx") },
+  mode: "production",
+  entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js",
   },
+  devtool: "inline-source-map",
   resolve: {
-    extensions: [".ts", ".tsx", ".js"],
-    alias: {
-      src: path.resolve(__dirname, "./src"),
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    fallback: {
+      os: require.resolve("os-browserify/browser"),
+      path: require.resolve("path-browserify"),
     },
   },
-  devtool: "source-map",
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: "ts-loader",
-      },
-      {
-        test: /\.html$/i,
-        use: {
-          loader: "html-loader",
-          options: {
-            minimize: true,
-          },
-        },
       },
       {
         test: /\.(s[ac]ss|css)$/,
@@ -44,23 +36,12 @@ module.exports = {
         loader: require.resolve("url-loader"),
         options: { limit: 8000, name: "images/[hash]-[name].[ext]" },
       },
-      {
-        test: /\.svg$/,
-        loader: "file-loader",
-      },
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: "./public/index.html" }),
-    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }),
+    new NodePolyfillPlugin(),
   ],
-  // externals: {
-  //   react: "React",
-  //   "react-dom": "ReactDOM",
-  // },
-  devServer: {
-    host: "localhost",
-    port,
-    open: true,
-  },
 };

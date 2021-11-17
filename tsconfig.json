@@ -1,17 +1,14 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
+    "sourceMap": true,
     "noImplicitAny": true,
-    "module": "esnext",
+    "module": "es6",
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "baseUrl": "src"
-  },
-  "include": ["src"]
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./node_modules/@types", "./src/@types"]
+  }
 }
