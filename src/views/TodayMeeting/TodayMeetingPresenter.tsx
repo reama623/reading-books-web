@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classNames from "classnames";
+import { db, requestBooks } from "../../api/firebase";
 // import UserIcon from "../../assets/icons/person-circle-outline.svg";
 
 export default function TodayMeetingPresenter() {
+  const [books, setBooks] = useState([]);
+  const getBooks = async () => {
+    requestBooks(db).then((o) => {
+      // setBooks(o);
+      console.log(o);
+    });
+  };
+  useEffect(() => {
+    getBooks();
+  }, []);
   return (
     <div id="wrap">
       <header className={classNames("header")}>
@@ -135,6 +146,19 @@ export default function TodayMeetingPresenter() {
                 <div className="book_title">틱낫한의 평화로움</div>
                 <div className="book_author">틱낫한</div>
                 <div className="book_reader">김민강</div>
+              </div>
+            </div>
+            <div className="user_book">
+              <div className="book_img">
+                <img
+                  src="https://bookthumb-phinf.pstatic.net/cover/163/392/16339251.jpg?type=m1&udate=20210211"
+                  alt="엄마는 괜찮아 책 이미지"
+                />
+              </div>
+              <div className="book_info">
+                <div className="book_title">엄마는 괜찮아</div>
+                <div className="book_author">김도윤</div>
+                <div className="book_reader">김종운</div>
               </div>
             </div>
           </div>
