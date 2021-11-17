@@ -1,19 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import classNames from "classnames";
-import { db, requestBooks } from "../../api/firebase";
 // import UserIcon from "../../assets/icons/person-circle-outline.svg";
 
 export default function TodayMeetingPresenter() {
-  const [books, setBooks] = useState([]);
-  const getBooks = async () => {
-    requestBooks(db).then((o) => {
-      // setBooks(o);
-      console.log(o);
-    });
-  };
-  useEffect(() => {
-    getBooks();
-  }, []);
   return (
     <div id="wrap">
       <header className={classNames("header")}>
