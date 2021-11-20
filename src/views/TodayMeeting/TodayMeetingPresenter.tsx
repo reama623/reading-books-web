@@ -12,7 +12,7 @@ export default function TodayMeetingPresenter() {
               
             </a> */}
             <a href="#" className="header_title_name">
-              <span className="blind">독서 모임</span>
+              <span className="blind">북끄북끄</span>
             </a>
           </h1>
           <div className="header_menus">
