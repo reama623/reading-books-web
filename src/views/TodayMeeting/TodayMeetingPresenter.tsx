@@ -151,6 +151,19 @@ export default function TodayMeetingPresenter() {
                 <div className="book_reader">김종운</div>
               </div>
             </div>
+            <div className="user_book">
+              <div className="book_img">
+                <img
+                  src="https://bookthumb-phinf.pstatic.net/cover/212/486/21248624.jpg?type=m1&udate=20211118"
+                  alt="마케터처럼 살아라 책 이미지"
+                />
+              </div>
+              <div className="book_info">
+                <div className="book_title">마케터처럼 살아라</div>
+                <div className="book_author">이노우에 다이스케</div>
+                <div className="book_reader">이성민</div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
