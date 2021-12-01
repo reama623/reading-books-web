@@ -52,14 +52,27 @@ export default function TodayMeetingPresenter() {
             {/* <p>그저 생각하고, 생활을 위해 독서하라. -베이컨-</p> */}
             {/* <p>좋은 책은 좋은 친구와 같다. -생피에르-</p> */}
             {/* <p>독서는 사람이 음식을 먹는 것과 같다. -헤르만 헤세-</p> */}
-            <p>책을 읽는 데에 어찌 장소를 가릴소냐?  -퇴계 이황-</p>
+            <p>책을 읽는 데에 어찌 장소를 가릴소냐? -퇴계 이황-</p>
           </div>
         </section>
         <section className="page_content">
-          <div className="page_content_title">오늘, 우리의 이야기</div>
-          <div className="page_content_subtitle">마음껏 이야기 해보아요!</div>
+          <div className="page_content_title">12월은, 같은 책 읽기</div>
+          <div className="page_content_subtitle">마음껏 이야기 해봐요 :)</div>
           <div className="page_content_books">
             <div className="user_book">
+              <div className="book_img">
+                <img
+                  src="https://bookthumb-phinf.pstatic.net/cover/168/943/16894345.jpg?type=m1&udate=20211110"
+                  alt="공정하다는 착각 책 이미지"
+                />
+              </div>
+              <div className="book_info">
+                <div className="book_title">공정하다는 착각</div>
+                <div className="book_author">마이클 센델</div>
+                {/* <div className="book_reader">김종운</div> */}
+              </div>
+            </div>
+            {/* <div className="user_book">
               <div className="book_img">
                 <img
                   src="https://bookthumb-phinf.pstatic.net/cover/068/576/06857604.jpg?type=m1&udate=20200127"
@@ -163,7 +176,7 @@ export default function TodayMeetingPresenter() {
                 <div className="book_author">이노우에 다이스케</div>
                 <div className="book_reader">이성민</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
